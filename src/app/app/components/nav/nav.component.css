@@ -1,0 +1,14 @@
+.container{
+    background-color: var(--color-2);
+    color: white ;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+    padding: 5px 40px 5px 5px;
+}
+
+.icon{
+    font-size: 1em;
+    color: var(--text);
+}

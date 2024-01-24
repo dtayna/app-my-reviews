@@ -1,0 +1,19 @@
+<div class="container">
+   
+    <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <div class="fields">
+        <div class="label">
+        <label for="titulo">Título:</label>
+        <input  class="primary" type="text" id="titulo" formControlName="titulo" />
+        </div>
+        <div class="label">
+        <label for="descricao">Descrição:</label>
+        <textarea class="primary-1" id="descricao" formControlName="descricao"> </textarea>
+        </div>
+        <div ngClass="center">
+        <button class="button-primary" type="submit">Enviar</button>
+        </div>
+    </div>
+    </form>
+
+</div>

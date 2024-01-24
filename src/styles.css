@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+   
+    --color-1: #ffffff;
+    --color-2: #eeeeee;
+    --text: #414141;
+    --size: 1em;
+}
+
+:root .dark{
+    --color-1: #2e2e2e;
+    --color-2: #414141;
+    --text: #eeeeee;
+}
+
+:root .plus{
+    --size: 1.5em;
+}
+
+
+body{
+    background-color: var(--color-1);
+    color: var(--text);
+    font-size: var(--size);
+    font-family: sans-serif;
+}
