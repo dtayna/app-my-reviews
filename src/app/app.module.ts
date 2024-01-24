@@ -7,12 +7,14 @@ import { NgIconsModule } from '@ng-icons/core';
 import { bootstrapCircleHalf } from '@ng-icons/bootstrap-icons';
 import { NewReviewFormComponent } from './app/components/new-review-form/new-review-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ProfilePictureComponent } from './app/components/profile-picture/profile-picture.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    NewReviewFormComponent
+    NewReviewFormComponent,
+    ProfilePictureComponent
   ],
   imports: [
     BrowserModule,

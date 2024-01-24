@@ -1,7 +1,7 @@
 .container{
     display: flex;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     padding: 30px;
     
 }
@@ -22,7 +22,7 @@
     border-radius: 5px;
     font-size: var(--size);
     color: white;
-    background-color: #F56040;
+    
     font-size: 1em;
 }
 
@@ -49,9 +49,5 @@
     flex-direction: column;
 }
 
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
+
+
