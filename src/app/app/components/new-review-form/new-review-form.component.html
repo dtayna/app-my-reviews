@@ -1,32 +1,32 @@
 <div class="row">
-   
     <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
-    <div class="container responsive-width-1 shadow">
-        <div class="form-element">
-        <label for="titulo">Título:</label>
-        <input  class="primary" type="text" id="titulo" formControlName="titulo" />
-        </div>
-        <div class="form-element">
-        <ngx-dropzone class="dropzone" (change)="onSelect($event)">
-            <ngx-dropzone-label>+</ngx-dropzone-label>
-            <ngx-dropzone-image-preview [removable]="true" (removed)="onRemove(f)" ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files" [file]="f">
-                <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
-            </ngx-dropzone-image-preview>
-            <ngx-dropzone-video-preview [removable]="true" (removed)="onRemove(f)" ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files" [file]="f">
-                <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
-              </ngx-dropzone-video-preview>
-        </ngx-dropzone>
+        <div class="container responsive-width-1 shadow">
 
+            <div class="form-element">
+                <label for="title">Título:</label>
+                <input  class="primary" type="text" id="title" formControlName="title" />
+            </div>
+
+            <div class="form-element">
+                <ngx-dropzone class="dropzone" (change)="onSelect($event)">
+                    <ngx-dropzone-label>+</ngx-dropzone-label>
+                    <ngx-dropzone-image-preview [removable]="true" (removed)="onRemove(f)" ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files" [file]="f">
+                        <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+                    </ngx-dropzone-image-preview>
+                    <ngx-dropzone-video-preview [removable]="true" (removed)="onRemove(f)" ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files" [file]="f">
+                        <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+                    </ngx-dropzone-video-preview>
+                </ngx-dropzone>
+            </div>
+
+            <div class="form-element">
+                <label for="description">Descrição:</label>
+                <textarea id="description" formControlName="description"> </textarea>
+            </div>
+            
+            <div ngClass="center">
+                <app-button [text]="'Enviar'" [type]="'Submit'"></app-button>
+            </div>
         </div>
-        <div class="form-element">
-        <label for="descricao">Descrição:</label>
-        <textarea id="descricao" formControlName="descricao"> </textarea>
-        </div>
-        
-        <div ngClass="center">
-        <app-button [text]="'Enviar'" [type]="'Submit'"></app-button>
-        </div>
-    </div>
     </form>
-
 </div>

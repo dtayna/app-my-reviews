@@ -10,6 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ProfilePictureComponent } from './app/components/profile-picture/profile-picture.component';
 import { NgxDropzoneModule } from 'ngx-dropzone';
 import { ButtonComponent } from './global/button/button.component';
+import { AccessibilityNavComponent } from './app/components/accessibility-nav/accessibility-nav.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ButtonComponent } from './global/button/button.component';
     NavComponent,
     NewReviewFormComponent,
     ProfilePictureComponent,
-    ButtonComponent
+    ButtonComponent,
+    AccessibilityNavComponent
   ],
   imports: [
     BrowserModule,

@@ -12,14 +12,8 @@
     align-items: start;
     gap: 20px;
     padding: var(--padding-box);
-    background-color: var(--color-2);
+    background-color: var(--color-1);
     border-radius: var(--radius);
-}
-
-.form-element{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
 }
 
 input[type="file"] {
@@ -28,7 +22,7 @@ input[type="file"] {
 
 .dropzone{
     border: var(--border-2);
-    background-color: var(--color-2);
+    background-color: var(--color-1);
     border-radius: var(--radius);
     display: flex;
     flex-wrap: wrap;
@@ -37,6 +31,10 @@ input[type="file"] {
     height: 150px;
     text-align: center;
     cursor: pointer;
+}
+
+.dropzone:hover{
+    background-color: var(--color-2);
 }
 
 /* width */

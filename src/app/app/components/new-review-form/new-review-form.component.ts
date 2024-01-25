@@ -17,8 +17,8 @@ export class NewReviewFormComponent implements OnInit{
 
   ngOnInit() {
     this.formulario = this.formBuilder.group({
-      titulo: ['', Validators.required],
-      descricao: ['', Validators.required],
+      title: ['', Validators.required],
+      description: ['', Validators.required],
       image: [Validators.required]
     });
   }

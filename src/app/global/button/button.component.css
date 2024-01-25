@@ -6,3 +6,12 @@ button {
     color: white;
     font-size: 1em;
 }
+
+button:hover {
+    transform: scale(0.98);
+    transition: 300ms linear;   
+}
+
+button:focus{
+    border: solid 5px #f8ced8;
+}

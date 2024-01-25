@@ -34,30 +34,52 @@ body{
     color: var(--text);
     font-size: var(--size);
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
+/* Forms */
+
 input {
-    border: var(--border-1);
-    width: 100%;
     height: 30px;
-    border-radius: var(--radius);
-    background-color: var(--color-1);
-    color:var(--text);
 }
 
 textarea{
-    border: var(--border-1);
-    width: 100%;
     height: 100px;
-    border-radius: var(--radius);
-    background-color: var(--color-1);
-    color:var(--text);
     resize: none;
 }
 
+input, textarea, select {
+    border: var(--border-1);
+    width: 100%;
+    font-family:inherit;
+    font-size: var(--size);
+    border-radius: var(--radius);
+    background-color: var(--color-1);
+    color:var(--text);
+}
+
+input:hover{
+    background-color: var(--color-2);
+}
+
+textarea:hover{
+    background-color: var(--color-2);
+}
+
+.form-element{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+/* elements*/
+
 .icon{
-    font-size: 1em;
+    font-size: 18px;
     color: var(--text);
+  
 }
 
 .center{
@@ -68,12 +90,12 @@ textarea{
 }
 
 .shadow{
-    -webkit-box-shadow: 2px 5px 8px -2px rgba(0,0,0,0.2);
-    -moz-box-shadow: 2px 5px 8px -2px rgba(0,0,0,0.2);
-    box-shadow: 2px 5px 8px -2px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.44);
+    -moz-box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.44);
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.44);
 }
 
-/* Responsive */
+/* Resp */
 
 @media only screen and (min-width: 480px) {
     .responsive-width-1{
