@@ -18,10 +18,22 @@ export class NewReviewFormComponent implements OnInit{
   ngOnInit() {
     this.formulario = this.formBuilder.group({
       titulo: ['', Validators.required],
-      descricao: ['', Validators.required]
+      descricao: ['', Validators.required],
+      image: [Validators.required]
     });
   }
 
+  files: File[] = [];
+
+  onSelect(event: { addedFiles: any; }) {
+    console.log(event);
+    this.files.push(...event.addedFiles);
+  }
+
+  onRemove(event: File) {
+    console.log(event);
+    this.files.splice(this.files.indexOf(event), 1);
+  }
   // Função para submeter o formulário
   onSubmit() {
     if (this.formulario.valid) {

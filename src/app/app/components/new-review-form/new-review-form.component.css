@@ -1,53 +1,62 @@
-.container{
+.row{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
-    
+    padding: 30px; 
 }
 
-.fields{
+.container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
     gap: 20px;
+    padding: var(--padding-box);
     background-color: var(--color-2);
-    padding: 20px;
+    border-radius: var(--radius);
 }
 
-.button-primary{
-    border: none;
-    padding: 10px 50px 10px 50px;
-    border-radius: 5px;
-    font-size: var(--size);
-    color: white;
-    
-    font-size: 1em;
-}
-
-.primary{
-    border: solid 1px #d3d3d3;
-    width: 150px;
-    height: 25px;
-    border-radius: 5px;
-    background-color: var(--color-1);
-    color:var(--text);
-}
-
-.primary-1{
-    border: solid 1px #d3d3d3;
-    width: 300px;
-    height: 200px;
-    border-radius: 5px;
-    background-color: var(--color-1);
-    color:var(--text);
-}
-
-.label{
+.form-element{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
+input[type="file"] {
+    display: none;
+}
 
+.dropzone{
+    border: var(--border-2);
+    background-color: var(--color-2);
+    border-radius: var(--radius);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    cursor: pointer;
+}
 
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px; 
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--extra); 
+    border-radius: var(--radius);
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

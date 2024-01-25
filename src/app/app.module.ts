@@ -8,19 +8,23 @@ import { bootstrapCircleHalf } from '@ng-icons/bootstrap-icons';
 import { NewReviewFormComponent } from './app/components/new-review-form/new-review-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProfilePictureComponent } from './app/components/profile-picture/profile-picture.component';
+import { NgxDropzoneModule } from 'ngx-dropzone';
+import { ButtonComponent } from './global/button/button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     NewReviewFormComponent,
-    ProfilePictureComponent
+    ProfilePictureComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgIconsModule.withIcons({ bootstrapCircleHalf }),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxDropzoneModule
   ],
   providers: [],
   bootstrap: [AppComponent]
